@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WebBankAPI.Application\WebBankAPI.Application.csproj" />
+      <ProjectReference Include="..\WebBankAPI.Domain\WebBankAPI.Domain.csproj" />
+      <ProjectReference Include="..\WebBankAPI.Infrastructure\WebBankAPI.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
